@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <Pane prefHeight="400.0" prefWidth="299.0" BorderPane.alignment="CENTER">
+         <children>
+            <ChoiceBox layoutX="63.0" layoutY="64.0" prefHeight="24.0" prefWidth="174.0" />
+            <Button layoutX="82.0" layoutY="128.0" mnemonicParsing="false" text="Open Exisiting List" />
+            <Button layoutX="102.0" layoutY="228.0" mnemonicParsing="false" text="Export Lists" />
+         </children>
+      </Pane>
+   </left>
+   <right>
+      <Pane prefHeight="400.0" prefWidth="312.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField layoutX="65.0" layoutY="61.0" promptText="New List Name" />
+            <Button layoutX="90.0" layoutY="128.0" mnemonicParsing="false" text="Create New List" />
+            <Button layoutX="106.0" layoutY="231.0" mnemonicParsing="false" text="Import List" />
+         </children>
+      </Pane>
+   </right>
+   <top>
+      <Pane prefHeight="96.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="134.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mazor's TODO List Application">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>
