@@ -121,7 +121,6 @@ public class TodoController implements Initializable {
         // call todoList.delete(ID)
         // This actually deletes it from the List
         // our checkbox should be how you mark an item as done
-        // we can just change the flag if necessary
     }
 
     @FXML

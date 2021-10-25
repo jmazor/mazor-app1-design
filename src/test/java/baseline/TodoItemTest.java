@@ -1,5 +1,11 @@
 package baseline;
 
+/*
+ *  UCF COP3330 Summer 2021 Application Assignment 1 Solution
+ *  Copyright 2021 Justin Mazor
+ */
+
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
