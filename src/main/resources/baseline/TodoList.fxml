@@ -28,6 +28,7 @@
             <Menu mnemonicParsing="false" text="View">
               <items>
                 <MenuItem fx:id="completedItems" mnemonicParsing="false" onAction="#handleFlags" text="Completed Items" />
+                  <MenuItem fx:id="viewAll" mnemonicParsing="false" onAction="#handleViewAll" text="View All" />
               </items>
             </Menu>
             <Menu fx:id="exitMenu" mnemonicParsing="false" onAction="#handleExit" text="Exit" />
@@ -35,7 +36,7 @@
       </MenuBar>
    </top>
    <center>
-      <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <TableView fx:id="table" onInputMethodTextChanged="#handleTextChange" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
         <columns>
           <TableColumn fx:id="todoItem" prefWidth="119.0" resizable="false" text="TODO" />
           <TableColumn fx:id="todoDesc" prefWidth="278.0" text="Description" />

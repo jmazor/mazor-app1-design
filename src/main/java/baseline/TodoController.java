@@ -66,6 +66,9 @@ public class TodoController implements Initializable {
     private MenuItem changeTitle;
 
     @FXML
+    private MenuItem viewAll;
+
+    @FXML
     public void handleDeleteList() {
         // TodoList.deleteList
         // TODO
@@ -116,6 +119,9 @@ public class TodoController implements Initializable {
     public void handleDeleteButton() {
         // determine ID from selected table field
         // call todoList.delete(ID)
+        // This actually deletes it from the List
+        // our checkbox should be how you mark an item as done
+        // we can just change the flag if necessary
     }
 
     @FXML
@@ -124,6 +130,39 @@ public class TodoController implements Initializable {
         // exit program safely
     }
 
+    @FXML
+    public void handleViewAll() {
+        // set flaggedItems to NULL
+        // set table to todoList.getList()
+    }
+
+
+    // This along with the method below are backup methods
+    // If i did not understand JavaFX functionally correctly
+    @FXML
+    public void handleTextChange() {
+        // on edit change of table
+        // get ID of TodoItem Changed
+        // This will only stay if FXML does not let me edit individual fields
+        // This backup method I would a new class variable called ID and set it here
+        // modifyElement()
+    }
+
+
+    // IMPORTANT
+    // All of these setUp commands are contingent on the fact that JavaFX will properly respond with the correct
+    // TodoItem selected
+    // If this is not the case I have already implemented a backup plan using handleTextChange
+    // This is what the Backup Method will look like
+
+    public void modifyElement(String ID) {
+        // read all fields
+        // todoList.editName(ID, newName)
+        // todoList.editDate(ID, newdate)
+        // todoList.editDesc(ID, newDesc)
+        // todoList.changeFlag(ID)
+
+    }
 
 
     public void setTable(TodoList inputData) {
@@ -131,25 +170,47 @@ public class TodoController implements Initializable {
         // set table to todoList.getTable
     }
 
+    // All setup items are public for unit testing
+
+    public void setUpItem() {
+        // set todoItem to editabale
+        // on todoItem edit call todoList.editName()
+    }
+
+    public void setUpDate() {
+        // set todoDate to editable
+        // try catch
+        // on todoDate edit call todoList.editDate()
+        // on catch complain
+    }
+
+    public void setUpDesc() {
+        // set todoDesc to editable
+        // on todoDesc edit call todoList.editDesc()
+    }
+
+    public void setUpFlag() {
+        // make todoFlag an editable Checkbox cell
+        // on edit call todoList.changeFlag()
+    }
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        // set Item Column
         // set Date Column
         // set Desc column
         // set flag column
-        // call readInput and pass persistant File name
         // set table data to todoList.getList()
         // set table to editable
-        // set todoDate to editable
-        // on todoDate edit call todoList.editDate()
+        // call setUpItem
+        // setUpName
+        // setUpDate
+        // setUpDesc
+        // setUpFlag
 
-        // set todoItem to editabale
-        // on todoItem edit call todoList.editName()
 
-        // set todoDesc to editable
-        // on todoDesc edit call todoList.editDesc()
 
-        // make todoFlag an editable Checkbox cell
-        // on edit call toodList.changeFlag()
+
     }
 }
 

@@ -46,6 +46,52 @@ class TodoControllerTest {
     @Test
     void setTable() {
         // this should set todoList to the passed TodoList
+        // then should set table to this
     }
+
+    @Test
+    void setUpItem() {
+        // should ensure Name is editable
+        // on name change should update TodoList object
+    }
+
+    @Test
+    void setUpDate() {
+        // should ensure date is editable
+        // should call editDate
+        // will complain if wrong date
+    }
+    @Test
+    void setUpDesc() {
+        // should ensure desc is editable
+        // on change should update TodoList object
+    }
+    @Test
+    void setUpFlag() {
+        // Flag should be a selectable checkbox
+        // if box is clicked TodoList object will be updated
+        // will switch boolean status
+    }
+
+    @Test
+    void handleViewAll() {
+        // should set table view to Full TodoList object list
+        // will also set FlaggedItems to Null to reset
+    }
+
+    @Test
+    void handleTextChange() {
+        // on text change wil return the String ID of the Item changed
+        // will then call modifyElement of that String
+        // ensure proper ID is selected
+    }
+
+    @Test
+    void modifyElement() {
+        // will read from table fields
+        // and will change the field selected in TodoList object
+        // ensure that the TodoList object is updated
+    }
+
 
 }

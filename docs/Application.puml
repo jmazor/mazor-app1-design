@@ -68,9 +68,7 @@
     +initialize(URL location, ResourceBundle resources)
 
 }
-
 +class TodoController implements Initializable {
-
     -todoList : TodoList
     -flaggedItems : ObservableList<TodoItem>
     -addButton : Button
@@ -87,14 +85,25 @@
     -completedItems : MenuItem
     -deleteList : MenuItem
     -changeTitle : MenuItem
+    -viewAll: MenuItem
     +handleDeleteList()
     +handleTitle()
     +handleFlags()
     +handleAddButton()
     +handleDeleteButton()
     +handleExit()
+    +handleTextChange()
+    +handleViewAll()
     +setTable(todoList)
     +initialize(URL location, ResourceBundle resources)
+
+    +setUpItem()
+    +setUpDate()
+    +setUpDesc()
+    +setUpFlag()
+
+    +handleTextChange()
+    +modifyElement()
 }
 Interface Initializable
 note left: JavaFX Interface

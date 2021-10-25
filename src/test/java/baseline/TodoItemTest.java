@@ -15,9 +15,15 @@ class TodoItemTest {
     }
 
     @Test
+    void editDateFail() {
+        // should throw a failure if the wrong format is inputted
+    }
+
+    @Test
     void editDate() {
         // ensure we can properly edit the Date of a TodoItem
         // assert getDate after changed
+        // ensure that date must be in proper format
     }
 
     @Test

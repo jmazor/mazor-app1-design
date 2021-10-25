@@ -28,6 +28,7 @@ public class TodoItem {
 
     public void editDate(String dueDate) {
         // ensure date is in proper format
+        // throw error if wrong format
         // can be empty
         // change this.dueDate
     }
